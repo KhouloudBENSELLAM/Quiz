@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button a {
+            text-decoration: none;
+            color: white;
+            
+        }
+        button{
+            border: 1px solid white;
+            background-color: #001e4dd9;
+            border-radius: 15px;
+            width: 23%;
+            height: 48px;
+            font-size: 28px;
+            padding: 0.4%;
+            margin-left: 35%;
+            margin-top: 10px;
+            margin-bottom: 35px;
+        }
+        h2{
+            text-align: center;
+            font-size: 33px;
+            margin-left: -8%;
+        }
+        section {
+            border: 2px solid ;
+            border-radius: 15px;
+            width: 54%;
+            margin-left: 22%;
+            margin-top: 40px;
+            /* background-color: white; */
+            backdrop-filter: blur(35px);
+            color: lightblue;
+            background-position: center;
+            
+        }
+        body{
+            background-image: url(Programming\ code\ abstract\ technology\ background\ of\ software\ developer\ and\ Computer\ scrip.jpeg);
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h2></h2>
+        <br><br>
+        <aside>
+            <button type="reset" id="btn"><a href="quiz.html">Reload</a></button>
+        </aside>
+    </section>
+    <script>
+        const searchParams = new URLSearchParams(window.location.search)
+        var score = searchParams.get('score')
+        // console.log(score)
+        document.querySelector('h2').innerHTML = `Your final score is ${score}/10`
+        
+        
+    </script>
+</body>
+</html>
